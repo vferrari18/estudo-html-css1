@@ -1,0 +1,483 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*________________________________
+GERAL
+________________________________*/
+
+hr {
+    border: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*________________________________
+HEADER
+________________________________*/
+
+header.top {
+    background: #cdcdcd;
+    min-height: 80vh;
+
+}
+
+header.top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.top nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header.top nav ul li {
+    padding: 10px 15px;
+}
+
+header.top nav ul li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+header.top nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header.top h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 35px 0 15px 0;
+}
+
+header.top p {
+    text-align: center;
+    color: #333;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    text-shadow: 0 0 1px #fff;
+}
+
+/*________________________________
+CHAMADA
+________________________________*/
+
+.call-to-action {
+    background: #565d67;
+}
+
+.call-to-action header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.call-to-action h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-right: 50px;
+}
+
+.call-to-action a {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    background: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.call-to-action a:hover {
+    background: rgb(88, 1, 1);
+}
+
+/*________________________________
+about
+________________________________*/
+
+.page-about .container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+
+.page-about article {
+    flex-basis: 30%;
+    padding: 0 70px;
+}
+
+.page-about article h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.page-about article p,
+.page-about article ul,
+.page-about article a {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.page-about article ul {
+    list-style: none;
+    padding: 0;
+}
+
+.page-about article ul li {
+    padding: 3px 0;
+}
+
+.page-about article ul li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background: #cdcdcd;
+    position: relative;
+    top: 5px;
+}
+
+.page-about article a {
+    display: inline-block;
+    padding: 10px 35px;
+    border: 2px solid #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: all 1s ease;
+}
+
+.page-about article a:hover {
+    background: #f5f5f5;
+    border-color: #cdcdcd;
+}
+
+/*________________________________
+Serviços
+________________________________*/
+
+.page-service {
+    border-top: 2px solid #cdcdcd;
+}
+
+.page-service .container {
+    padding: 50px 0;
+}
+
+.page-service .container h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.page-service .container>header p {
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.page-service .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 80px 0 0;
+}
+
+.page-service article {
+    flex-basis: 45%;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+.page-service article figure {
+    margin: 0;
+    float: left;
+    width: 20%;
+}
+
+.page-service article figure img {
+    border-radius: 100%;
+}
+
+.page-service article header {
+    float: right;
+    width: 80%;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.page-service article header h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.page-service article header p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #777;
+}
+
+/*________________________________
+contato
+________________________________*/
+
+.page-contact {
+    border-top: 2px solid #cdcdcd;
+}
+
+.page-contact .container {
+    padding: 50px 0;
+}
+
+.page-contact .container h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.page-contact .flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.page-contact form,
+.page-contact aside {
+    flex-basis: 30%;
+}
+
+.page-contact form {
+    padding: 10px;
+}
+
+
+.page-contact form>div {
+    padding: 10px 0;
+}
+
+.page-contact form input,
+.page-contact form textarea {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #777;
+}
+
+.page-contact form ::placeholder {
+    color: #777;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.page-contact form button {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff;
+    background: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    border: 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.page-contact form button:hover {
+    background: rgb(165, 1, 1);
+}
+
+.page-contact aside {
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+}
+
+.page-contact aside>p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 10px 0;
+    padding: 5px 0 20px;
+}
+
+.page-contact address p {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.page-contact address p:nth-child(1) {
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+
+.page-contact ul {
+    list-style: none;
+    padding: 40px 0;
+}
+
+
+.page-contact ul li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.page-contact ul li a {
+    display: inline-block;
+    padding: 15px 23px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    color: #777;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 1s ease;
+}
+
+.page-contact ul li a:hover {
+    background: #565d67;
+    border: #ccc;
+    color: #ccc;
+}
+
+/*________________________________
+rodapé
+________________________________*/
+
+footer {
+    padding: 10px 0;
+    background: #565d67;
+    position: relative;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0 10px;
+}
+
+footer a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+
+/*________________________________
+Resposivo
+________________________________*/
+
+@media (max-width:640px) {
+    header.top .container {
+        flex-direction: column;
+    }
+
+    header.top h1 {
+        font-size: 1.2rem;
+    }
+
+    header.top p {
+        max-width: 100%;
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    .call-to-action header{
+        justify-content: space-between;
+        padding:0 5px ;
+    }
+
+    .call-to-action h2{
+        font: size 1.0rem;
+        padding-right: 0;
+    }
+
+    .call-to-action a{
+        width: 100px;
+        padding: 20px 10px;
+    }
+
+    .page-about .container{
+        flex-direction:column;
+    }
+
+    .page-about .container aside{
+        text-align: center;
+    }
+
+    .page-about article h2{
+        text-align: center;
+    }
+
+    .page-about article a{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .page-service .flex-container{
+        max-width: 100%;
+        flex-direction: column;
+        padding:50px;
+    }
+    .page-service article{
+        flex-basis: auto;
+    }
+    
+    .page-contact .flex-container{
+        flex-direction: column;
+    }
+    .page-contact aside{
+        padding: 20px;
+    }
+    .page-contact ul{
+        text-align: center;
+    }
+
+    footer p{
+        padding: 0 10px;
+    }
+}
